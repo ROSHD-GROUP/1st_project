@@ -11,7 +11,12 @@ func _ready():
 	pass
 func _physics_process(delta):
 	if can_drive:
-		speed = speed* 0.98
+		move_car()
+		move_and_slide()
+
+func move_car():
+	if can_drive:
+		speed = speed* 0.99
 	if Input.is_action_pressed("ui_right"):
 		rotate(0.1)
 	if Input.is_action_pressed("ui_left"):
@@ -26,5 +31,4 @@ func _physics_process(delta):
 			
 			
 	position += speed * Vector2.from_angle(rotation)
-	move_and_slide()
-		
+	

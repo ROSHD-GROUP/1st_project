@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddylbub0vema5"]
+[gd_scene load_steps=5 format=3 uid="uid://wgoa6w5wlilk"]
 
 [ext_resource type="Script" path="res://Car.gd" id="1_44fi8"]
 [ext_resource type="Texture2D" uid="uid://d0qglw7qm0q1t" path="res://Assets/car/CAR/PNG CAR.png" id="2_gtswn"]
@@ -19,8 +19,8 @@ shape = SubResource("CapsuleShape2D_v5xso")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_gtswn")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Hitarea" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitarea"]
 position = Vector2(16, 0)
 shape = SubResource("RectangleShape2D_unrc0")
