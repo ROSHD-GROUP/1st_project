@@ -10,15 +10,7 @@ config_version=5
 
 [application]
 
-config/name="car_game"
+config/name="car"
 run/main_scene="res://Main.tscn"
-config/features=PackedStringArray("4.2", "Mobile")
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
-
-[display]
-
-window/stretch/mode="canvas_items"
-
-[rendering]
-
-renderer/rendering_method="mobile"
